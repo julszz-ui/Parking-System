@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Main Page</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background: url('./background.jpg');
+                background-size: 1450px;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 120px;
+            }                 
+            #head_1 {
+                text-align: center;
+                font-size: 2.5em;
+                color: white;
+                margin: 40px 0 20px 0;
+                position: static;
+                transform: none;
+            }
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                top: 0;
+                left: 0;
+                padding: 10px 20px;
+                background-color: rgba(0, 0, 0, 0.6);
+                position: fixed;
+                z-index: 100;
+            }
+            .square {
+                height: 80px;
+                width: 80px;
+                display: flex;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            .logo {
+                max-width: 70px;
+                height: auto;
+                display: block;
+            }
+            button {      
+                background-color: rgb(8, 223, 8);
+                color: white;
+                shape-margin: square;
+                gap: 10px;
+                font-size: 1em;
+                padding: 5px 10px;
+                border: none;   
+            }
+            nav ul {
+                display: flex;  
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 15px;
+                font-size: 1em;
+                list-style: none;
+                margin: 35px;
+                padding: 0;
+                color: white;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 4px;
+                transition: background 0.2s;
+            }
+
+            nav ul li a:hover {
+                background: rgba(255,255,255,0.2);
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px){
+                .body {
+                    background-position: center;
+                }            
+            }
+            @media (max-width: 900px) {
+                #head_1 {
+                    font-size: 2em;
+                }
+                .header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 10px;
+                }
+                .square {
+                    margin-bottom: 10px;
+                }
+                nav ul {
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+                }
+                nav ul li a {
+                    padding: 10px 0;
+                    width: 100%;
+                    display: block;
+                }
+           }
+
+            @media (max-width: 600px) {
+                #head_1 {
+                    font-size: 1.3em;
+                    margin-top: 100px;
+                }
+                .logo {
+                    max-width: 50px;
+                }
+                .container {
+                    padding-top: 140px;
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="head_1">Your Car is safe in our hands.</h1>
+            <div class="header">
+                <div class="square">
+                    <img src="./image-removebg-preview.png" class="logo" alt="Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="available park.html">AVAILABLE PARK</a></li>
+                        <li><a href="subscription.html">SUBSCRIPTION</a></li>
+                        <li><button><a href="sign up.html"> Sign up</a></button></li>
+                        <li><button><a href="log in.html">Log in</a></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
