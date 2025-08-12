@@ -1,0 +1,23 @@
+.button-container {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-left: auto;
+  padding: 5px 35px;
+}
+
+button {
+  background-color: rgb(8, 223, 8);
+  color: white;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: rgb(4, 110, 4);
+} 
